@@ -1,0 +1,15 @@
+p {
+  font-family: Lato;
+}
+
+ol {
+  counter-reset: item;
+}
+li {
+  display: block;
+  color: #666666;
+}
+li:before {
+  content: counters(item, '.') ' ';
+  counter-increment: item;
+}
