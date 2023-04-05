@@ -1,10 +1,10 @@
 <ol>
   <div *ngFor="let test of tests; let i = index">
-    <li>{{ Console.log(test) }}</li>
+    <li>{{ test.node }}</li>
     <div *ngFor="let student of test; let j = index">
       <ol>
         <li>
-          {{ student.name + ' ' + student.score }}
+          {{ student.node }}
         </li>
       </ol>
     </div>
